@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+    font
+}
+
+header{
+    background-image: url(..//Website-Design-Background.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}   
+
+.top ul{
+    float: right;
+    list-style-type: none;
+    
+}
+.top ul li{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.top ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    border: 1px solid gray;
+    
+    
+}
+
+.top ul li a:hover{
+    background-color: dimgray;
+}
+
+.main ul{
+    list-style-type: none;
+    padding: 30px 30px;
+    
+}
+.main ul li{
+    margin-top: 50px;
+    font-size: 30px;
+}
+.main ul li a{
+    text-decoration: none;
+    color: aliceblue;
+
+    
+}
+.main ul li a:hover{
+    color: aqua;
+}
+
+
+.main{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.main p{
+    font-size: 50;
+    color: aliceblue;
+    
+}
