@@ -26,16 +26,15 @@ header{
     text-decoration: none;
     color: aliceblue;
     padding: .75rem 1.25rem;
-    border-radius: 10rem;
-    border: 1px solid gray;
+    
     
     
 }
 
 .top ul li a:hover{
-    background-color: dimgray;
+    
+    color: aqua;
 }
-
 .main ul{
     list-style-type: none;
     padding: 30px 30px;
@@ -65,5 +64,82 @@ header{
 .main p{
     font-size: 50;
     color: aliceblue;
+    
+}
+.issue{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.issue-content{
+    height: 500px;
+    width: 500px;
+    background:white ;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+
+}
+.issue-content h3{
+    margin-left: 127px;
+    font-size: 30px;
+    
+    
+}
+.issue-content img{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.issue-content input{
+    margin: 15px auto;
+    
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    color: black;
+    width: 50%;
+    padding: 4px;
+    
+}
+.issue-content textarea{
+    margin: 15px auto;
+    background: transparent;
+    border:  1px solid black;
+    color: black;
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 40px;
+    
+}
+.submit{
+    height: 43px;
+    margin-left: 200px;
+    padding: 8px 20px;
+    background:black;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    box-shadow: 6px 6px 10px -4px rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+    transition: 0.4s;
+    
+}
+.submit:hover{
+    background-color:#34495E;
     
 }

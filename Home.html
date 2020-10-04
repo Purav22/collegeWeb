@@ -9,9 +9,9 @@
 
             <div class= "top">
                 <ul>
-                    <li><a href="#">Upload documents</a></li>
-                    <li><a href="#">LDRP-ITR</a></li>
-                    <li><a href="#">Report an issue</a></li>
+                    <li><a href="Upload.html">Upload documents</a></li>
+                    <li><a href="https://www.ldrp.ac.in/" target="_blank">LDRP-ITR</a></li>
+                    <li><a href="#" id="iss">Report an issue</a></li>
                     <li><a href="#">Report bug</a></li>
 
                 </ul>
@@ -26,6 +26,53 @@
                 </ul>
             </div>  
         </header>
+
+        <div class = "issue">
+            <div class = "issue-content">
+                <h3>What is an issue?</h3>
+                <img src="close.jpg" alt="" id="cls">
+                <input type="text" placeholder="Name" id="name"><br>
+                <input type="email" placeholder="Email" id="email"><br>
+                <textarea name="" id="" cols="40" rows="15" placeholder="Tell us what is an issue!!!" id="textIssue"></textarea><br>
+                <a href="#"  class="submit" id ="sub" onclick="submitIssue()">submit</a>
+                
+            </div>
+
+        </div>
+        <script>
+            function submitIssue(){
+                var name = document.getElementById("name");
+                var email = document.getElementById("email");
+                var text = document.getElementById("textIssue");
+
+                if(name.value != "" && email.value != "" ){
+                    alert("Your response has been submitted");
+                    name.value="";
+                    email.value="";
+                    
+                    document.querySelector(".issue").style.display = "none";
+                    
+                }
+                else{
+                    alert("Blank value not allowed!!");
+                }
+            }
+            document.getElementById("iss").addEventListener("click", function(){
+                document.querySelector(".issue").style.display = "flex";
+            })
+
+            document.getElementById("cls").addEventListener("click", function(){
+                var name = document.getElementById("name");
+                var email = document.getElementById("email");
+               
+                    name.value="";
+                    email.value="";
+                    
+                document.querySelector(".issue").style.display = "none";
+            })
+
+            
+        </script>
         
     </body>
 </html>
