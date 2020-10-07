@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    position: fixed;
+    background: #22242A;
+    padding: 30px;
+    width: 100%;
+    height: 30px;
+}
+.top h3{
+    margin: -15px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #1DC4E7;
+
+}
+.top i{
+    color: #1DC4E7;
+}
+
+.sidebar{
+    background: #2F323A;
+    margin-top: 90px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 70px;
+    text-decoration: none;
+    padding-left: 15px;
+    box-sizing: border-box;
+    transition: 0.4s;
+    transition-property: background;
+}
+
+.sidebar a:hover{
+    background: #19B3D3;
+}
+.sidebar i{
+    padding-left: 10px;
+}
+
+
+label #sidebar_btn{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    margin: 29px;
+    left: -10px;
+    top: 35px;
+    transition: 0.4s;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover{
+    color: #19B3D3;
+}
+
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+
+
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+
+
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 180px;
+    width: 80px;
+    margin-top: 60px;
+    background: none;
+}
+
+#check:checked ~ .sidebar i:hover{
+    color: #19B3D3;
+}
+
+#check{
+    display: none;
+}
+
+.bg{
+    margin-left: 250px;
+    background: url(../pexels-tirachard-kumtanom-733857.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+#check:checked ~ .bg{
+    margin-left: 60px;
+}
